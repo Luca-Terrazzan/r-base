@@ -1,13 +1,10 @@
-vector1 <- c('a', 'b', 'c')
-print(vector1)
-print(vector1)
+people <- read.csv(file='data.csv', row.names=1)
 
-print(class(vector1))
+# Print the csv
+print(people)
 
-matrix1 <- matrix(data = vector1, nrow = 2, ncol = 2, byrow = TRUE)
-print(matrix1)
+# Print the first 6 rows
+head(people)
 
-# some loops
-for (letter in matrix1) {
-  print(letter)
-}
+# Print the internal structures used to represent the csv
+str(people)
