@@ -8,3 +8,11 @@ head(people)
 
 # Print the internal structures used to represent the csv
 str(people)
+
+# Linear regression
+linearRegression <- lm(people)
+print(linearRegression)
+
+# Scatterplot
+plot(people)
+abline(linearRegression)
