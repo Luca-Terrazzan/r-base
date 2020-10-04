@@ -1,0 +1,21 @@
+---
+title: "Some samples with R Markdown"
+author: Luca Terrazzan
+date: 4.10.20
+output: html_document
+---
+
+# Read a dataset of weights and heihgts divided by sex
+
+```{r}
+people <- read.csv(file='data/weight-height.csv')
+```
+
+```{r}
+plot(people)
+```
+
+```{r}
+library(knitr)
+# kable(people, digits=2)
+```
